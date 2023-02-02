@@ -1,0 +1,11 @@
+Begin
+    Input a,b,c
+                Max = a
+       If b> Max
+           Display " b là giá trị lớn nhất"
+       End If 
+       If c> Max
+           Display " C là giá trị lớn nhất"
+       End If 
+    Output Max 
+End 
