@@ -1,0 +1,20 @@
+Begin
+Display " Nhập điểm số của học viên"
+   Input a = điểm số của học viên
+                a <= 100
+    If a => 75 
+    Display " Loại A "
+       End If
+    If 60 =< a < 75 
+    Display " Loại B"
+       End If 
+    If 45 =< a < 60 
+    Display " Loại C "
+       End If 
+    If 35 <= a < 45 
+    Display " Loại D "
+       End If
+    If a < 35 
+    Display " Loại E "
+       End If 
+End 
