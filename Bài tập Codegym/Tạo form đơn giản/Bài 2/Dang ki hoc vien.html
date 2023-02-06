@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí học viên</title>
+<style>
+    h1 {
+        color:blue;
+        border: 1px solid ;
+        background-color: aquamarine;
+    }
+    div{
+        background-color: beige;
+    }
+    input{
+        margin-top:5px;
+    }
+    .ns{
+        margin-left: 10px;
+    }
+    .hvt{
+        margin-left: 8px;
+    }
+    .gt{
+        margin-left: 15px;
+    }
+    .dc{
+        margin-left: 32px;
+    }
+    #lop{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    #Email{
+        margin-left: 42px;
+    }
+    #phone{
+        margin-left: 14px;
+    }
+    .dk{
+        margin-left: 85px;
+    }
+
+</style>
+</head>
+<body>
+<div style="width: 650px; margin: 200px auto; border:2px " >
+    <form action="/dkhv" method="post">
+        <fieldset>
+            <h1>
+                <th>Đăng Kí Học Viên</th>
+            </h1>
+            <label for="yourname" style="color:blue">Họ Và Tên</label>
+            <input id="yourname" type="text" class="hvt" name="yourname">
+            </br>
+            <label for="Date" style="color:blue">Ngày Sinh</label>
+            <input id="Date" type="text" class="ns"  name="Date">
+            </br>
+            <th>Giới Tính</th>
+            <input type="radio" class="gt"  name="gender" /> Nam
+            <input type="radio" class="gt" name="gender" /> Nữ
+            </br>
+            <label for="address" style="color:blue">Địa chỉ</label>
+            <input id="address" type="text" class="dc"  name="address">
+        </br>
+            <label for="lop" style="color:blue">Chọn lớp</label>
+            <select id="lop" name="cars">
+                <option value="volvo">Chọn lớp</option>
+                <option value="saab">12</option>
+                <option value="fiat">11</option>
+                <option value="audi">10</option>
+            </select>
+        </br>
+            <label for="Email" style="color:blue">Email</label>
+            <input id="Email" type="text"  name="Email">
+            </br>
+            <label for="phone" style="color:blue">Điện thoại</label>
+            <input id="phone" type="text"  name="phone">
+         </br>
+            <input type="submit" class="dk"  value="Đăng ký">
+            <input type="reset" value="Nhập lại">
+            </fieldset>
+    </form>
+</div>
+</body>
+</html>

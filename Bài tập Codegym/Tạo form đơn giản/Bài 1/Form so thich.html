@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form so thich</title>
+<style>
+    input {
+        margin-top:5px;
+    }
+    div{
+        background-color: aqua;
+    }
+    h1 {
+        color:white;
+        border: 3px solid ;
+        background-color: crimson;
+        text-align: center;
+    }
+    .lw{
+        margin-left: 61px;
+    }
+    .dl{
+        margin-left: 61px;
+    }
+    .em{
+        margin-left: 32px;
+    }
+    .cc{
+        margin-left: 9px;
+    }
+    .ds{
+        margin-left: 16px;
+    }
+    .gtt {
+        margin-left: 75px;
+    }
+
+</style>
+</head>
+<body>
+
+    <div style="width: 650px; margin: 200px auto; border:2px " >
+        <form action="/sothich" method="post">
+     <fieldset>
+        <h1>
+        <th>Sở Thích Của Bạn</th>
+        </h1>
+        <label for="yourname" style="color:blue">Họ Và Tên</label>
+        <input id="yourname" type="text" name="yourname">
+        </br>
+        <label for="email" style="color:blue">Email</label>
+        <input id="email" type="email" class="em" name="email">
+        </br>
+         <label for="hobby" style="color:blue">Sở thích </label>
+          <input id="hobby"  type="checkbox" name="hobby">
+        <label for="hobby" style="color:red">Thể thao </label>
+        <input id="hobby" type="checkbox"  class="cc" name="hobby" >
+        <label for="hobby" style="color:red">Âm nhạc </label>
+        <input id="hobby" type="checkbox" class="ds" name="hobby" >
+        <label for="hobby" style="color:red">Đọc sách </label>
+        </br>
+        <input id="hobby" type="checkbox" class="lw" name="hobby" >
+        <label for="hobby" style="color:red">Lướt web</label>
+        <input id="hobby" type="checkbox" name="hobby" >
+        <label for="hobby" style="color:red">Chơi game</label>
+        <input id="hobby" type="checkbox" name="hobby" >
+        <label for="hobby" style="color:red">Điện ảnh</label></br>
+        <input id="hobby" type="checkbox" class="dl" name="hobby" >
+         <label for="hobby" style="color:red">Du lịch</label>
+         </br>
+         <input type="submit" class="gtt" value="Gửi thông tin">
+         <input type="reset" class="nl" value="Nhập lại">
+
+
+    </fieldset>
+        </form>
+    </div>
+</body>
+</html>
