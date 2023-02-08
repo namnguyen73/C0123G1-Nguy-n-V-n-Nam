@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>udmt</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" id="num1" placeholder="so thu nhat">
+<input type="number" id="num2" placeholder="so thu hai">
+<br>
+<button onclick="Add()">Addition(+)</button>
+<button onclick="Sub()">Suptraction(-)</button>
+<button onclick="Mul()">Multiplication(X)</button>
+<button onclick="Div()">Divition(/)</button>
+<h3>Result:</h3>
+<div id="result">Day la ket qua</div>
+</body>
+</html>
+<script>
+    function Add() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) + Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Sub() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) - Number(number2);
+        document.getElementById("result").innerHTML = result ;
+    }
+    function Mul() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) * Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Div() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let result = Number(number1) / Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
