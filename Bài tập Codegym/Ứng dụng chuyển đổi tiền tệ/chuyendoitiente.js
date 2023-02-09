@@ -1,4 +1,4 @@
-function ChangeMoney() {
+function changeMoney() {
     let amount = document.getElementById("amount").value;
     let fromC = document.getElementById("from").value;
     let to = document.getElementById("to").value;
