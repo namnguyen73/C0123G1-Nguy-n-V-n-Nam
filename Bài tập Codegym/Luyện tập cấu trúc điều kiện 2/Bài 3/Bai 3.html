@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 </title>
+</head>
+<body>
+<h1> Tính diện tích hình vuông</h1>
+Nhập a:<input type="number" id="soa"></br>
+<input type="button" onclick="check()" value="check">
+<label id="ketqua"></label>
+</body>
+<script>
+    function check() {
+        let giatri1= Number(document.getElementById("soa").value)
+        let Ketqua= giatri1*giatri1
+        document.getElementById("ketqua").innerHTML = "Diện tích hình vuông là : " + Ketqua
+    }
+</script>
+</html>

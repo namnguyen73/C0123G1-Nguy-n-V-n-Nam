@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<h1>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b</h1></br>
+Nhập a: <input type="number" id="soa"></br>
+</br>
+Nhập b: <input type="number" id="sob"></br>
+<input type="button" onclick="check()" value="check">
+<label id="ketqua"></label>
+</body>
+<script>
+ function check() {
+     let giatri1= Number(document.getElementById("soa").value)
+     let giatri2= Number(document.getElementById("sob").value)
+     let ketqua= giatri1*giatri2
+document.getElementById("ketqua").innerHTML ="Diện tích hình chữ nhật là : " + ketqua
+
+ }
+</script>
+</html>
