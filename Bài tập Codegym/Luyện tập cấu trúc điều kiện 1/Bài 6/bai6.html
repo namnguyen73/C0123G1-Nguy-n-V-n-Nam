@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tinh hoa hong</title>
+    <style>
+        .hh {
+           margin-left: 22px;
+        }
+    </style>
+</head>
+<body>
+<h3>Tính hoa hồng</h3>
+Hoa hồng :<input type="number" id="sothu1" class="hh"> VND<br/>
+<br>
+Số đơn hàng : <input type="number" id="sothu2"><br/>
+<br>
+<input type="button" onclick="kiemtra()" value="Tính hoa hồng">
+<label id="ketQua"></label>
+</body>
+<script>
+    function kiemtra() {
+        let giatri1 = Number(document.getElementById("sothu1").value)
+        let giatri2 = Number(document.getElementById("sothu2").value)
+        let ketQua = giatri1*giatri2
+        document.getElementById("ketQua").innerHTML = "Hoa hồng của bạn là : " + ketQua + "VND"
+    }
+</script>
+</html>
