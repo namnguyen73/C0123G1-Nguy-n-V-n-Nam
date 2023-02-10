@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+Nhập a: <input type="number" id="soa"></br>
+</br>
+Nhập b: <input type="number" id="sob"></br>
+</br>
+Nhập c: <input type="number" id="soc"></br>
+<input type="button" onclick="check()" value="check">
+<label id="kiemtra"></label>
+</body>
+<script>
+   function check() {
+       let a= Number(document.getElementById("soa").value)
+       let b= Number(document.getElementById("sob").value)
+       let c= Number(document.getElementById("soc").value)
+if ( (a & b & c) >0 & (a+b >c ) & ( b+c>a ) && ( a+c>b ))
+    document.getElementById("kiemtra").innerHTML = "a,b,c là  cạnh của tam giác"
+    else
+        document.getElementById("kiemtra").innerHTML = "a,b,c Không phải là cạnh của một tam giác"
+    }
+
+</script>
+</html>

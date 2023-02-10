@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài8</title>
+</head>
+<body>
+<h1>Kiểm tra tuổi</h1></br>
+Nhập số tuổi: <input type="number" id="tuoi"></br>
+<input type="button" onclick="check()" value="check">
+</body>
+<script>
+function check() {
+    let a = Number(document.getElementById("tuoi").value)
+    if (a > 0 & a <= 120)
+        alert('Đây là tuổi của một người');
+    else
+        alert('Đây không phải là tuổi của một người');
+}
+</script>
+</html>
