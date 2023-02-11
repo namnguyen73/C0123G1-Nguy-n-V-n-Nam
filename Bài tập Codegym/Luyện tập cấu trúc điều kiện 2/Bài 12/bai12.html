@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai12</title>
+</head>
+<body>
+<script>
+    let soTienVay= +prompt("Nhập số tiền vay ban đầu (triệu)");
+    let soThang= +prompt("Nhập số tháng cho vay (tháng)");
+    let laiThang= +prompt("Lãi suất hàng tháng");
+    let laiNganHang=(soTienVay*Math.pow((1+laiThang), soThang))-soTienVay
+    alert("Lãi ngân hàng là:"+laiNganHang+" "+"triệu VNĐ");
+</script>
+</body>
+</html>
