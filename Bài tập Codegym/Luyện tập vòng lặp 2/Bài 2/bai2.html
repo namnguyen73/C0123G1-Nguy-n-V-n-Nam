@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<h2 ><div>
+<button onclick="Batdau()">Bắt đầu</button>
+<p id="result-2"></p>
+</div>
+    <div id="exercise-3"></div>
+    </h2>
+</body>
+<script>
+    function Batdau() {
+        var num = prompt("Nhập vào 1 số bất kì để tính ra giai thừa của số đó");
+        var factorialResult = 1;
+        for (var i = 1; i <= num; i++) {
+            factorialResult *= i;
+        }
+        document.getElementById("result-2").innerHTML = factorialResult;
+    }
+
+</script>
+</html>
