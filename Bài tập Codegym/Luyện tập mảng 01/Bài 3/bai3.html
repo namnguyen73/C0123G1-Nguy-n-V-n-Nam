@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let number = [1, 12, 16, 25, 10, 5];
+     let maxNumber = Math.max.apply(Math, number);
+     let bigNumber = number[0];
+     let averageNumber = 0;
+     for (let i = 0;i < number.length; i++){
+        averageNumber += number[i]
+         if(bigNumber < number[i]){
+            bigNumber = number[i];
+         };
+     };
+     console.log('số lớn nhất là : ' + bigNumber )
+     console.log(('trung bình: ' + averageNumber))
+</script>
+</body>
+</html>

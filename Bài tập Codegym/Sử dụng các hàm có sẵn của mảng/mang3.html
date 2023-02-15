@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang3</title>
+</head>
+<body>
+<script>
+    const num=window.prompt();
+    const str= num.toString();
+    const UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const LOWER = "abcdefghijklmnopqrstuvwxyz";
+    const result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>

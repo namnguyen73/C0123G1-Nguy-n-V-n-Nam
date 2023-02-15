@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+​
+</body>
+<script>
+let mangSoNguyen = [10]
+for (let i = 0; i < 10; i++) {
+    let phanTu = Number(prompt("Vui lòng nhập phần tử thứ " + (i + 1) + " / 10 phần tử"))
+    mangSoNguyen[i] = phanTu
+}
+document.write("Mảng số nguyên vừa nhập " + mangSoNguyen)
+document.write("<br/>")
+
+let soV = Number(prompt("Vui lòng nhập số V"))
+let viTriV = -1
+let chieuDaiMang = mangSoNguyen.length
+for (let i = 0; i < chieuDaiMang; i++) {
+    if (mangSoNguyen[i] === soV) {
+        viTriV = i
+    }
+}
+document.write("V = " + soV)
+document.write("<br/>")
+if (viTriV !== -1) {
+    for (let i = viTriV; i < chieuDaiMang; i++) {
+        if (i !== chieuDaiMang -1) {
+            mangSoNguyen[i] = mangSoNguyen[i + 1]
+        } else {
+            mangSoNguyen[i] = 0
+        }
+    }
+    document.write("Mảng số nguyên sau khi xóa:  " + mangSoNguyen)
+    document.write("<br/>")
+} else {
+    document.write("Không tìm thấy số V = " + soV + " trong mảng")
+}
+</script>
+</html>
