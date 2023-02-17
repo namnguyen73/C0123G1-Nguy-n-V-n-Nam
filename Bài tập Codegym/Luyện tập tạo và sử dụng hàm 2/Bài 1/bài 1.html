@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+Nhập số :<label for="number"></label>
+<input id="number" type="number" name="number" value="">
+<button onclick="check()">Check</button>
+<script>
+    let b;
+    function check(){
+        let a = +document.getElementById("number").value;
+        b = a * a;
+        alert("Bình phương của số là : "+ b );
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+Số thứ nhất :<input id="soa" name="soa" type="number" value=""></br>
+<label for="soa" ></label>
+Số thứ hai  :<input id="sob" name="sob" type="number" value=""></br>
+<label for="sob" ></label>
+<button onclick="myCheck()">check</button>
+<p id="check"></p>
+<script>
+function myCheck(){
+    let a= document.getElementById("soa").value;
+    let b= document.getElementById("sob").value;
+    let sum= +a+ +b;
+if(a > b) {
+    alert("a lớn hơn b")
+}else {
+    alert(sum);
+}
+}
+
+</script>
+</body>
+</html>

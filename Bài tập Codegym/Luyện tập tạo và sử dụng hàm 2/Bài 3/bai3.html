@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+Nhập số : <label for="number"></label>
+<input type="number" name="number" id="number" value=""></br>
+<button onclick="alert(check(document.getElementById('number').value))">Check</button>
+<script>
+function check(a) {
+        if (a === 0) {
+            return 1;
+        }
+        return a * check(a - 1);
+}
+</script>
+</body>
+</html>
