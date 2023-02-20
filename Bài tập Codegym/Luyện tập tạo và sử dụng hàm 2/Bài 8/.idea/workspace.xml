@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886eab20-5b9f-4a45-902c-a874b4d14c61" name="Default Changelist" comment="">
+    <list default="true" id="c68c3c8f-762f-451a-ba6b-a890d4ba7cad" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Bài 4/bai4.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Bài 5/bai5.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Bài 6/bài 6.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Bài 7/bai7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="2Lr594WF3OIevwD7MlMkLbdaZ4N" />
+  <component name="ProjectId" id="2LzB3pQ1nXIAvdnO7P86ZLYtsa1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,27 +53,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bài 9" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="886eab20-5b9f-4a45-902c-a874b4d14c61" name="Default Changelist" comment="" />
-      <created>1676616205929</created>
+      <changelist id="c68c3c8f-762f-451a-ba6b-a890d4ba7cad" name="Default Changelist" comment="" />
+      <created>1676863834081</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676616205929</updated>
-      <workItem from="1676616207121" duration="2527000" />
-      <workItem from="1676622877611" duration="8000" />
-      <workItem from="1676856840755" duration="622000" />
+      <updated>1676863834081</updated>
+      <workItem from="1676863835231" duration="91000" />
     </task>
     <servers />
   </component>
@@ -89,12 +82,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="932" y="187" key="FileChooserDialogImpl" timestamp="1676619940723">
+    <state x="932" y="187" key="FileChooserDialogImpl" timestamp="1676863925431">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="932" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1676619940723" />
+    <state x="932" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1676863925431" />
   </component>
 </project>

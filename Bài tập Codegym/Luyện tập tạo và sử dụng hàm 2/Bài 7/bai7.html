@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+Nhập số a :<label for="soa"></label>
+<input type="number" id="soa" name="soa" value=""></br>
+</br>
+Nhập số b  :<label for="sob"></label>
+<input type="number" id="sob" name="sob" value=""></br>
+</br>
+<button onclick="alert(check())">Check</button>
+<script>
+    function check() {
+    let a= document.getElementById('soa').value;
+    let b= document.getElementById('sob').value;
+        return ( b +  a);
+
+    }
+
+</script>
+</body>
+</html>
