@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cong tac bong den </title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor() {
+            this.status = false;
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+    }
+
+    class SwitchButton {
+        constructor() {
+            this.switchStatus = false;
+            this.lamp = null;
+        }
+
+        collectLamp(lamp) {
+            this.lamp = lamp
+        }
+
+        getSwitchStatus() {
+            return this.switchStatus;
+        }
+
+        checkStatus() {
+            if (this.switchStatus === false) {
+                return 'Công tắc bật'
+            } else {
+                return 'Công tắc tắt';
+            }
+        }
+
+        turnOnSwitch() {
+            this.switchStatus = true
+            this.lamp.turnOn();
+        }
+
+        turnOffSwitch() {
+            this.switchStatus = false
+            this.lamp.turnOff();
+        }
+    }
+
+    let electricLamp = new ElectricLamp();
+    let switchButton = new SwitchButton()
+    switchButton.collectLamp(electricLamp);
+    switchButton.turnOnSwitch();
+    document.write(electricLamp.getStatus() + '<br>');
+    switchButton.turnOffSwitch();
+    document.write(electricLamp.getStatus() + '<br>');
+
+
+    let i = 0;
+    while (i <= 10) {
+        switchButton.turnOnSwitch();
+        document.write(electricLamp.getStatus() + " Công tắc bật đèn" +"<br>");
+        switchButton.turnOffSwitch();
+        document.write(electricLamp.getStatus() + " Công tắc tắt đèn " + "<br>");
+        i++
+    }
+
+</script>
+</body>
+</html>
