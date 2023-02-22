@@ -2,47 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mô tả hình chữ nhật </title>
+    <title>Title</title>
 </head>
 <body>
-<canvas id="Canvas" width="250" height="350"></canvas>
+<canvas id="DemoCanvas" width="500" height="600"></canvas>;
+<br>
+<button onclick="thayDoiKichThuoc()">Đổi Kich Thước</button>;
+<br>
 <script>
     class Rectangle {
-        width;
-        height;
-        constructor (width,height) {
-            this.width = width;
-            this.height = height;
+
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
         }
-        getWidth() {
-            return this.width;
+
+
+        setDai(dai) {
+            this.dai = dai;
         }
-        getHeight() {
-            return this.height;
+
+        setRong(rong) {
+            this.rong = rong;
         }
-        setWidth(width) {
-            this.width = width;
+
+        getDienTich() {
+            return this.dai * this.rong;
         }
-        setHeight(height) {
-            this.height = height;
+
+        getChuVi() {
+            return (this.dai + this.rong) * 2;
         }
-        getArea() {
-            return this.width * this.height;
-        }
-        getPerimeter() {
-            return (this.width + this.height) * 2;
+
+        drawCanvas(color) {
+            let canvas = document.getElementById("DemoCanvas");
+            let ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.dai, canvas.rong);
+            ctx.fillStyle = color;
+            ctx.fillRect(10, 10, this.dai, this.rong)
         }
     }
-    let myRectangle = new Rectangle(300,250);
-    let width = myRectangle.getWidth();
-    let height = myRectangle.getHeight();
-    myRectangle.setWidth('Diện tích và chu vi hình chữ nhật 100 ');
-    myRectangle.getWidth();
-    document.write(myRectangle.getWidth());
-    let canvas = document.getElementById("Canvas");
-    let ctx = canvas.getContext('2d');
-    ctx.fillStyle='#6a5acd';
-    ctx.fillRect(20, 20, width, height)
+
+    let myRectangle = new Rectangle(150, 50);
+
+    myRectangle.drawCanvas()
+
+    function thayDoiKichThuoc() {
+        let dai = +prompt("Nhập Chiều Rộng");
+        let rong = +prompt("Nhập Chiều Cao");
+        let color=prompt("nhập màu");
+        myRectangle.setDai(dai);
+        myRectangle.setRong(rong);
+        myRectangle.drawCanvas(color);
+    }
+
+    let dienTich = myRectangle.getDienTich();
+    let chuVi = myRectangle.getChuVi();
+    document.write("Diện Tích : " + dienTich + "<br>");
+    document.write("Chu Vi : " + chuVi);
 </script>
+
 </body>
 </html>

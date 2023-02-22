@@ -8,7 +8,12 @@
 <script>
     class Temperature {
         constructor(celsius) {
-            this.celsius = celsius;
+            while (celsius < -273) {
+                {
+                    celsius = prompt("Nhiệt độ phải lớn hơn -273,mời nhập lại");
+                }
+            }
+                this.celsius = celsius;
         }
 
         getFahrenheit() {
@@ -23,8 +28,8 @@
             return "Nhiệt độ F= " + this.getFahrenheit() + "<br>" + "Nhiệt độ K= " + this.getKelvin();
         }
     }
-
-    let temperature = new Temperature(25);
+    let celsius = +prompt("nhap do C");
+    let temperature = new Temperature(celsius);
     document.write(temperature.change());
 </script>
 </body>
