@@ -6,6 +6,29 @@
 </head>
 <body>
 <script>
+let arr = [];
+let countle= 0;
+let countchan = 0;
+let n = prompt("Nhập độ dài của mảng");
+for(let i =1; i<=n ; i++){
+    let item = prompt("Nhập phần tử thứ" + i);
+    arr[i]= item;
+}
+let result = true;
+console.log(arr);
+for(let i=1;i<arr.length;i++){
+    const arrMin = arr[i];
+    const arrMax = arr[arr.length - i];
+    if( arrMin !== arrMax){
+        result = false;
+        break;
+    }
+}
+if(result){
+    console.log("Đối xứng");
+}else{
+    console.log("Không đối xứng");
+}
 
 </script>
 </body>
