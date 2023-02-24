@@ -6,6 +6,12 @@
 </head>
 <body>
 <script>
+    let n = +prompt("Nhập độ dài phần tử: ");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần thử thứ " + (i + 1));
+    }
+    console.log( arr);
     function check(arr) {
         let count1 = 0;
         let count2 = 0;
@@ -26,12 +32,6 @@
             return false;
         }
     }
-    let n = +prompt("Nhập số lượng phần tử: ");
-    let arr = [];
-    for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("Nhập phần thử thứ " + (i + 1));
-    }
-   console.log( arr);
     check(arr);
 </script>
 </body>
